@@ -5,49 +5,78 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MickeyMouse Restaurant</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍓</text></svg>">
+
         <link rel="stylesheet" href="style.css">
     </head>
 
+    <header class="site-header">
+        <div class="logo-icon">🍥</div>
+        <h1 class="site-title">Mickey Mouse Restaurant</h1>
+    </header>
+      
+      
     <body>
         <div class="container">
             <h1>Get The Delicious Roasted Chicken Right At Your Door </h1>
+
+
+            <div class="slider-container">
+                <div class="slider-card">
+                  <img id="sliderImage" src="chickenPlate.jpg" alt="Chicken Plate">
+                </div>
+              </div>
+
+            <div class="media-container">
+                <div class="media-card">
+                    <img src="Money_Quest.jpg" alt="Money Quest Meme" class="media-box">
+                    <video src="mickeyMouse.mp4" autoplay loop muted playsinline class="media-box"></video>
+                </div>
+            </div>
+            
+
+            <form class="order-form">
+                <label>Enter your name:</label><br>
+                <input type ="text" name="name" placeholder="Enter your name" required><br><br>
+
+
+                <fieldset>
+                    <legend>Choose the taste:</legend><br>
+                    <input type ="checkbox" name="taste" value="halal"> Halal<br>
+                    <input type ="checkbox" name="taste" value="spicy"> Spicy<br>
+                    <input type ="checkbox" name="taste" value="with salad"> With Salad<br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choose the size:</legend><br>
+                    <input type="radio" name="size" value="whole"> Whole<br>
+                    <input type="radio" name="size" value="half"> Half<br>
+                    <input type="radio" name="size" value="quarter"> Quarter<br><br>
+                </fieldset>
+
+                <label for="delivery">Choose the mode of delivery</label>
+                <select id="delivery" name="delivery">
+                    <option>Same day (after 3 hours of the order)</option>
+                    <option>Next day</option>
+                    <option>Pickup</option>
+                </select>
+
+                <input type="submit" value="Order now 🧁" />
+            </form>
+
+            <footer>
+                <a class="w3-link" href="https://www.w3schools.com/html/" target="_blank">Made by Mimi</a>
+            </footer>
+
+            <div id="custom-popup" class="popup hidden">
+                <div class="popup-content">
+                  <button class="popup-close" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 1.2em; cursor: pointer;">×</button>
+                  <p>🍗 Your order has been placed! Thank youuuu 💕</p>
+                  <button onclick="closePopup()">OK!</button>
+                </div>
+              </div>
+              
         </div>
-
-        <div class="slider">
-            <img id="sliderImage" src="chickenPlate.jpg" alt="Chicken Plate">
-        </div>
-
-        <div class="media-section">
-            <img src="Money_Quest.jpg" alt="Money Quest Meme">
-            <video src="mickeyMouse.mp4" loop autoplay muted></video>   
-        </div>
-
-        <form class="order-form">
-            <label>Enter your name:</label><br>
-            <input type ="text" name="name" placeholder="Enter your name" required><br><br>
-
-            <label>Choose the taste:</label><br>
-            <input type ="checkbox" name="taste" value="halal"> Halal<br>
-            <input type ="checkbox" name="taste" value="spicy"> Spicy<br>
-            <input type ="checkbox" name="taste" value="with salad"> With Salad<br><br>
-
-            <label>Choose the size:</label><br>
-            <input type="radio" name="size" value="whole"> Whole<br>
-            <input type="radio" name="size" value="half"> Half<br>
-            <input type="radio" name="size" value="quarter"> Quarter<br><br>
-
-            <label>Choose the mode of delivery</label>
-            <select>
-                <option>Same day (after 3 hours of the order)</option>
-                <option>Next day</option>
-                <option>Pickup</option>
-            </select>
-
-        <input type="submit" value="Order now!" />
-    </form>
-
-    <a class="w3-link" href="https://www.w3schools.com/html/" target="_blank">Made by Mimi</a>
-</div>
 
         <script src="script.js"></script>
     </body>
