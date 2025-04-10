@@ -5,6 +5,7 @@ body {
     padding: 20px;
     background: linear-gradient(to bottom right, #0000ff, #add8e6);
     color: #000000;
+    text-align: center;
 }
 
 .container {
@@ -27,10 +28,20 @@ h1 {
     margin: 20px 0;
   }
 
-.memes {
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
+.media-section {   
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.media-section img,
+.media-section video {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #333;
 }
 
 .order-form {
