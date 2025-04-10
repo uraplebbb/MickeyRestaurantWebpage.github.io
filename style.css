@@ -79,7 +79,6 @@ h1 {
   background-color: #fff6f9;
 }
 
-
 /* Media: image and video */
 .media-container {
   display: flex;
@@ -108,7 +107,6 @@ h1 {
   border-radius: 15px;
   background-color: #fff6f9;
 }
-
 
 /* Form Styling */
 .order-form {
@@ -215,7 +213,6 @@ footer a {
 .popup-content button:hover {
   background-color: #f78b87;
 }
-
 
 /* Responsive Design */
 @media (max-width: 600px) {
